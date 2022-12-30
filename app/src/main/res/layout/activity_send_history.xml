@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sticker.SendHistoryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_stickerSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sticker_sent"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_books"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stickers"
+            app:srcCompat="@drawable/sticker_books" />
+
+        <TextView
+            android:id="@+id/tv_booksCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_books"
+            app:layout_constraintStart_toEndOf="@+id/iv_books"
+            app:layout_constraintTop_toTopOf="@+id/iv_books" />
+
+        <ImageView
+            android:id="@+id/iv_love"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_books"
+            app:srcCompat="@drawable/sticker_love" />
+
+        <TextView
+            android:id="@+id/tv_loveCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_love"
+            app:layout_constraintStart_toEndOf="@+id/iv_love"
+            app:layout_constraintTop_toTopOf="@+id/iv_love" />
+
+        <ImageView
+            android:id="@+id/iv_mad"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_love"
+            app:srcCompat="@drawable/sticker_mad" />
+
+        <TextView
+            android:id="@+id/tv_madCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_mad"
+            app:layout_constraintStart_toEndOf="@+id/iv_mad"
+            app:layout_constraintTop_toTopOf="@+id/iv_mad" />
+
+        <ImageView
+            android:id="@+id/iv_music"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_mad"
+            app:srcCompat="@drawable/sticker_music" />
+
+        <TextView
+            android:id="@+id/tv_musicCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_music"
+            app:layout_constraintStart_toEndOf="@+id/iv_music"
+            app:layout_constraintTop_toTopOf="@+id/iv_music" />
+
+        <ImageView
+            android:id="@+id/iv_pikachu"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_music"
+            app:srcCompat="@drawable/sticker_pikachu" />
+
+        <TextView
+            android:id="@+id/tv_pikachuCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_pikachu"
+            app:layout_constraintStart_toEndOf="@+id/iv_pikachu"
+            app:layout_constraintTop_toTopOf="@+id/iv_pikachu" />
+
+        <ImageView
+            android:id="@+id/iv_pirate"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pikachu"
+            app:srcCompat="@drawable/sticker_pirate" />
+
+        <TextView
+            android:id="@+id/tv_pirateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_pirate"
+            app:layout_constraintStart_toEndOf="@+id/iv_pirate"
+            app:layout_constraintTop_toTopOf="@+id/iv_pirate" />
+
+        <ImageView
+            android:id="@+id/iv_proud"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pirate"
+            app:srcCompat="@drawable/sticker_proud" />
+
+        <TextView
+            android:id="@+id/tv_proudCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_proud"
+            app:layout_constraintStart_toEndOf="@+id/iv_proud"
+            app:layout_constraintTop_toTopOf="@+id/iv_proud" />
+
+        <ImageView
+            android:id="@+id/iv_smile"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_proud"
+            app:srcCompat="@drawable/sticker_smile" />
+
+        <TextView
+            android:id="@+id/tv_smileCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_smile"
+            app:layout_constraintStart_toEndOf="@+id/iv_smile"
+            app:layout_constraintTop_toTopOf="@+id/iv_smile" />
+
+        <ImageView
+            android:id="@+id/iv_sunglasses"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_smile"
+            app:srcCompat="@drawable/sticker_sunglasses" />
+
+        <TextView
+            android:id="@+id/tv_sunglassesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_sunglasses"
+            app:layout_constraintStart_toEndOf="@+id/iv_sunglasses"
+            app:layout_constraintTop_toTopOf="@+id/iv_sunglasses" />
+
+        <ImageView
+            android:id="@+id/iv_tongue"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_sunglasses"
+            app:srcCompat="@drawable/sticker_tongue" />
+
+        <TextView
+            android:id="@+id/tv_tongueCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_tongue"
+            app:layout_constraintStart_toEndOf="@+id/iv_tongue"
+            app:layout_constraintTop_toTopOf="@+id/iv_tongue" />
+
+        <ImageView
+            android:id="@+id/iv_tree"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_tongue"
+            app:srcCompat="@drawable/sticker_tree" />
+
+        <TextView
+            android:id="@+id/tv_treeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_tree"
+            app:layout_constraintStart_toEndOf="@+id/iv_tree"
+            app:layout_constraintTop_toTopOf="@+id/iv_tree" />
+
+        <TextView
+            android:id="@+id/stickers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/stickers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_stickerSent" />
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/number_of_times_sent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stickers"
+            app:layout_constraintTop_toBottomOf="@+id/tv_stickerSent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

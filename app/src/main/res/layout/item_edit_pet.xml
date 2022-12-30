@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_pet_avt"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_pet_name_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toEndOf="@+id/iv_pet_avt"
+        app:layout_constraintTop_toTopOf="@+id/iv_pet_avt" />
+
+    <TextView
+        android:id="@+id/tv_pet_age_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Age:"
+        app:layout_constraintStart_toStartOf="@id/tv_pet_name_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pet_name_lab" />
+
+    <TextView
+        android:id="@+id/tv_pet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_pet_name_lab"
+        app:layout_constraintStart_toEndOf="@+id/tv_pet_name_lab"
+        app:layout_constraintTop_toTopOf="@id/tv_pet_name_lab" />
+
+    <TextView
+        android:id="@+id/tv_pet_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_pet_age_lab"
+        app:layout_constraintStart_toEndOf="@+id/tv_pet_age_lab"
+        app:layout_constraintTop_toTopOf="@id/tv_pet_age_lab" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <TextView
+        android:id="@+id/tv_pet_species_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Species"
+        app:layout_constraintStart_toStartOf="@id/tv_pet_age_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pet_age_lab" />
+
+    <TextView
+        android:id="@+id/tv_pet_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_pet_species_lab"
+        app:layout_constraintStart_toEndOf="@+id/tv_pet_species_lab"
+        app:layout_constraintTop_toTopOf="@id/tv_pet_species_lab" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413389700811",
+    "firebase_url": "https://numad-team21-default-rtdb.firebaseio.com",
+    "project_id": "numad-team21",
+    "storage_bucket": "numad-team21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413389700811:android:8c060a5751d5ccd29a654e",
+        "android_client_info": {
+          "package_name": "com.example.team21"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413389700811-dl5dt11a3kmojao52vetvcafpjtl373t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.team21",
+            "certificate_hash": "4048b3b39d9be11ef6c8c571dd9a00710173da20"
+          }
+        },
+        {
+          "client_id": "413389700811-ba1mkk0qhn63alddv7ob7jeb8q9h8i9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJjc1-OxOKVfZ8GKmEymIdP_LaWuc_qb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413389700811-ba1mkk0qhn63alddv7ob7jeb8q9h8i9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

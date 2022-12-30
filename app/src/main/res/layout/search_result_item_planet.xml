@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+
+    <TextView
+        android:id="@+id/tv_planet_name_lab"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPlanet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_planet_population_lab"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/population"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPopulation"
+        app:layout_constraintTop_toBottomOf="@+id/tv_planet_name_lab" />
+
+    <TextView
+        android:id="@+id/tv_planet_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tv_planet_population_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_planet_name" />
+
+    <TextView
+        android:id="@+id/tv_planet_orbital_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tv_planet_orbital_period_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_planet_surface_water" />
+
+    <TextView
+        android:id="@+id/tv_planet_orbital_period_lab"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/orbital_period"
+        app:layout_constraintStart_toEndOf="@+id/imageViewOrbit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_planet_surface_water_lab" />
+
+    <TextView
+        android:id="@+id/tv_planet_surface_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tv_planet_surface_water_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_planet_population" />
+
+    <TextView
+        android:id="@+id/tv_planet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tv_planet_name_lab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPlanet"
+        android:layout_width="26dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/planet" />
+
+    <TextView
+        android:id="@+id/tv_planet_surface_water_lab"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/surface_water"
+        app:layout_constraintStart_toEndOf="@+id/imageViewWater"
+        app:layout_constraintTop_toBottomOf="@+id/tv_planet_population_lab" />
+
+    <ImageView
+        android:id="@+id/imageViewPopulation"
+        android:layout_width="27dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPlanet"
+        app:srcCompat="@drawable/population" />
+
+    <ImageView
+        android:id="@+id/imageViewWater"
+        android:layout_width="27dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPopulation"
+        app:srcCompat="@drawable/water" />
+
+    <ImageView
+        android:id="@+id/imageViewOrbit"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewWater"
+        app:srcCompat="@drawable/orbit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

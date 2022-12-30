@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/reviewerPhotoIV"
+        android:layout_width="140dp"
+        android:layout_height="105dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.001"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_home" />
+
+    <TextView
+        android:id="@+id/requestDateTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:text="Date:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/reviewerPhotoIV"
+        app:layout_constraintTop_toTopOf="@id/reviewerPhotoIV" />
+
+    <TextView
+        android:id="@+id/locationTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Location:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/requestDateTitleTV"
+        app:layout_constraintTop_toBottomOf="@id/requestDateTitleTV" />
+
+    <TextView
+        android:id="@+id/petsTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pets:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/locationTitleTV"
+        app:layout_constraintTop_toBottomOf="@id/locationTitleTV" />
+
+    <TextView
+        android:id="@+id/requestDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="2022-12-22 to 2022-12-23"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/requestDateTitleTV"
+        app:layout_constraintTop_toTopOf="@id/requestDateTitleTV" />
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="San Jose, CA"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/locationTitleTV"
+        app:layout_constraintTop_toTopOf="@id/locationTitleTV" />
+
+    <TextView
+        android:id="@+id/petsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Cat, Dog"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/petsTitleTV"
+        app:layout_constraintTop_toTopOf="@id/petsTitleTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

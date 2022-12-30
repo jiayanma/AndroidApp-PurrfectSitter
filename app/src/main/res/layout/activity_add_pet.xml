@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_pet_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/name"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pet_uplaod_avt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btn_pet_uplaod_avt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Upload"
+        app:layout_constraintBottom_toTopOf="@id/tv_add_pet_name_lab"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pet_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_pet_avatar" />
+
+    <Button
+        android:id="@+id/btn_pet_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        app:layout_constraintBottom_toBottomOf="@id/btn_pet_uplaod_avt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_pet_uplaod_avt"
+        app:layout_constraintTop_toTopOf="@id/btn_pet_uplaod_avt" />
+
+    <TextView
+        android:id="@+id/tv_add_pet_name_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pet_uplaod_avt" />
+
+    <TextView
+        android:id="@+id/tv_add_pet_species_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Species:"
+        app:layout_constraintStart_toStartOf="@id/tv_add_pet_name_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_pet_name_lab" />
+
+    <TextView
+        android:id="@+id/tv_add_pet_age_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Age:"
+        app:layout_constraintStart_toStartOf="@id/tv_add_pet_species_lab"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_pet_species_lab" />
+
+    <Button
+        android:id="@+id/btn_pet_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pet_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pet_age" />
+
+    <Button
+        android:id="@+id/btn_pet_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_pet_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/et_pet_age" />
+
+    <EditText
+        android:id="@+id/et_pet_name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_add_pet_name_lab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_add_pet_name_lab"
+        app:layout_constraintTop_toTopOf="@id/tv_add_pet_name_lab" />
+
+    <Spinner
+        android:id="@+id/sp_pet_species"
+        style="@android:style/Widget.Material.Spinner.Underlined"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Species"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_add_pet_species_lab"
+        app:layout_constraintStart_toStartOf="@id/et_pet_name"
+        app:layout_constraintTop_toTopOf="@id/tv_add_pet_species_lab" />
+
+    <EditText
+        android:id="@+id/et_pet_age"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_add_pet_age_lab"
+        app:layout_constraintStart_toStartOf="@id/sp_pet_species"
+        app:layout_constraintTop_toTopOf="@id/tv_add_pet_age_lab" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pet_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>

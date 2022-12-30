@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurrfectSitter.Activities.CreateAccountActivity">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/et_title"
+        app:layout_constraintEnd_toEndOf="@+id/tv_password"
+        app:layout_constraintTop_toTopOf="@+id/et_email" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/password"
+        app:layout_constraintBottom_toBottomOf="@+id/et_title"
+        app:layout_constraintEnd_toEndOf="@+id/tv_password2"
+        app:layout_constraintTop_toTopOf="@+id/et_title" />
+
+    <TextView
+        android:id="@+id/tv_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="left"
+        android:text="@string/confirm_password"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password2"
+        app:layout_constraintEnd_toStartOf="@+id/bt_create_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_password2" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="left"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/tv_password2"
+        app:layout_constraintStart_toEndOf="@+id/tv_password" />
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="left"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/bt_create_account"
+        app:layout_constraintStart_toEndOf="@+id/tv_password2" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="8dp"
+        android:gravity="left"
+        app:layout_constraintBottom_toTopOf="@+id/et_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_email" />
+
+    <Button
+        android:id="@+id/bt_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

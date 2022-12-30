@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_books"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_love"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_music"-->
+<!--        app:srcCompat="@drawable/sticker_books" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_love"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/iv_books"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_mad"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_pikachu"-->
+<!--        app:srcCompat="@drawable/sticker_love" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_mad"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_pirate"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_love"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/sticker_mad" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_music"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_pikachu"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_books"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_proud"-->
+<!--        app:srcCompat="@drawable/sticker_music"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_pikachu"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/iv_music"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_pirate"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_love"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_smile"-->
+<!--        app:srcCompat="@drawable/sticker_pikachu"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_pirate"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_sunglasses"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_pikachu"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_mad"-->
+<!--        app:srcCompat="@drawable/sticker_pirate"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_proud"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_smile"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_music"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_tongue"-->
+<!--        app:srcCompat="@drawable/sticker_proud"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_smile"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/iv_proud"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_sunglasses"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_pikachu"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_tree"-->
+<!--        app:srcCompat="@drawable/sticker_smile"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_sunglasses"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iv_tree"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_smile"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_pirate"-->
+<!--        app:srcCompat="@drawable/sticker_sunglasses"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_tongue"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_tree"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_proud"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:srcCompat="@drawable/sticker_tongue"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_tree"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/iv_tongue"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_sunglasses"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_smile"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:srcCompat="@drawable/sticker_tree" />-->
+    <GridView
+        android:id="@+id/gv_stickers"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
